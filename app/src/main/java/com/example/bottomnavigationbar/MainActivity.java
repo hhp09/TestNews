@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
                 switch (menuItem.getItemId())
                 {
                     case R.id.home:
+                        startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.search:
                         startActivity(new Intent(getApplicationContext(), Search.class));
